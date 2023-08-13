@@ -1,0 +1,30 @@
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(56, 49, 49);
+  color: white;
+  padding: 10px;
+  z-index: 999;
+}
+
+/* Navigation */
+nav {
+  padding: 15px 28px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 5px;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+nav a.active {
+  border: 1px solid green;
+  color: green;
+}
