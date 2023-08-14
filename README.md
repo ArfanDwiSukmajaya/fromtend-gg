@@ -1,8 +1,11 @@
-# React + Vite
+## 2. How to run in local
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+1. Open Terminal/CMD on project folder directory
+2. Run "npm install" on terminal/CMD
+3. Rename file .env_example to .env
+3. Set VITE_BASE_URL in .env file => check on ## 3. How to run in local https://github.com/ArfanDwiSukmajaya/backend-gg/blob/main/README.md and paste to VITE_BASE_URL with endpoint /api/v1, example: VITE_BASE_URL=http://localhost:3000/api/v1
+4. Run "npm start" on terminal/CMD
+run dev
+5. If app success on terminal/cmd will print "Server is running"
+```
