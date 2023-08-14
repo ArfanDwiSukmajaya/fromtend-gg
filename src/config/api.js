@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://backend-gg.vercel.app/api/v1/",
-  timeout: 5000,
+  baseURL: import.meta.env.VITE_BASE_URL,
+  timeout: 2000,
 });
 
 const api = {

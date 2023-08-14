@@ -9,7 +9,6 @@ export default function Navbar() {
           Live
         </a>
         <a href="">Experience</a>
-        <a href="">Live</a>
       </nav>
     </header>
   );

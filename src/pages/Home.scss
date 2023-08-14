@@ -1,9 +1,22 @@
 .shorts-container {
   width: 95%;
-  margin: 80px auto 20px auto;
+  margin: 40px auto 20px auto;
   /* background-color: antiquewhite; */
   display: flex;
   justify-content: start;
   gap: 1.5%;
   flex-wrap: wrap;
+}
+
+/* Home.scss */
+
+.search-container input {
+  margin-left: 38px;
+  margin-top: 80px;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
 }
