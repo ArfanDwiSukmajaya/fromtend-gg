@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./VideoDetail.scss";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import api from "../config/api";
 
 export default function VideoDetail() {
@@ -8,6 +8,7 @@ export default function VideoDetail() {
   const [data, setData] = React.useState([]);
   const [username, setUsername] = useState("");
   const [comment, setComment] = useState("");
+  const navigate = useNavigate();
 
   async function fetchData() {
     try {
@@ -52,6 +53,9 @@ export default function VideoDetail() {
       <div id="content">
         {data && (
           <>
+            <button className="btn" onClick={() => navigate(-1)}>
+              Go Back
+            </button>
             <h1>{data.title}</h1>
             <iframe id="youtube-iframe" src={`https://www.youtube.com/embed/${slug}?rel=0&amp;autoplay=1`} frameBorder="0" allowFullScreen></iframe>
           </>
@@ -72,7 +76,7 @@ export default function VideoDetail() {
           </ul>
           <input type="text" id="username-input" placeholder="Enter your username" value={username} onChange={(e) => setUsername(e.target.value)} />
           <textarea id="comment-input" placeholder="Enter your comment" value={comment} onChange={(e) => setComment(e.target.value)}></textarea>
-          <button id="submit-comment" onClick={handleSubmitComment}>
+          <button className="btn" id="submit-comment" onClick={handleSubmitComment}>
             Submit Comment
           </button>
         </div>
